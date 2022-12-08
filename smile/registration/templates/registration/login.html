@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- <form action="/accounts/login/" method="post"> -->
+                <form method="post">
+                    {% csrf_token %}
+
+                    <h3 class="form-title">Login</h3>
+
+                    <!-- <div class="b-username form-group"> -->
+                    <div class="form-group">
+                        <label for="" class="form-label">Username</label>
+                        <input class="form-control" type="text" name="username" id="" placeholder="username">
+                    </div>
+                    <!-- <div class="b-password"> -->
+                    <div class="form-group">
+                        <label for="" class="form-label">Password</label>
+                        <input class="form-control" type="password" name="password" id="password" placeholder="password">
+                        <a href="/accounts/password_reset/">forget password</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            
+                <hr>
+                
+                <p>Don't have an account? <a href="{% url 'signup:signup' %}">Register</a></p>
+            
+                <!-- MESSAGE -->
+                {% for message in messages%}
+                    <h5 class="bt-{{message.tags}}" id="msg">{{message}}</h5>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

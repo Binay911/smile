@@ -1,0 +1,92 @@
+
+body {
+    text-align: center;
+}
+
+.login, .logout {
+    background: #524fff;
+    padding: 8px 22px!important;
+    border-radius: 2px;
+}
+
+/********************** HOMEPAGE ************************/
+.img-sec {
+    width: 600px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/********************** LOGIN ************************/
+
+form {
+    display: inline-block;
+    margin: 3em 0;
+}
+
+.form-title {
+    margin-bottom: 1em;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 1.2em;
+}
+
+/********************** SIGNUP ************************/
+
+.b-firstname, .b-lastname, .b-username, .b-password, .b-password1, .b-password2, .b-email {
+    margin-bottom: 1.2em;
+    font-size: 1.2em;
+}
+
+button {
+    height: 40px;
+    /* width: 120px; */
+    padding: 0 2em!important;
+    margin-top: 0.8em;
+}
+
+/********************** AFTER LOGIN ************************/
+
+.bt-smile-img {
+    height: 400px!important;
+    width: 400px!important;
+}
+
+/********************** HIDDEN BUTTON ************************/
+#nxtBtn {
+    /* display: none; */
+    visibility: hidden;
+}
+
+#result {
+    background: yellow;
+}
+
+/**************************************************************/
+.bt-info {
+    display: inline-block;
+    font-size: 0.9em;
+    color: #ffffff;
+    padding: .6em;
+    border-radius: 6px;
+    background: red;
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+.bt-success {
+    display: inline-block;
+    font-size: 0.9em;
+    color: #ffffff;
+    padding: .6em;
+    border-radius: 6px;
+    background: rgb(48, 156, 48);
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
